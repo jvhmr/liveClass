@@ -16,7 +16,7 @@
             <div class="out-btn" @mouseenter="enter" @mouseleave="leave">
                 <img src="../../src/assets/img/welcome/arrow.png" alt="" class='out-img' v-if="!showWhite">
                 <img src="../../src/assets/img/welcome/arrowWhite.png" alt="" class='out-img' v-else>
-                <span>退出</span>
+                <span v-on:click="headerexit">退出</span>
             </div>
         </div>
     </div>
@@ -39,6 +39,9 @@
             leave() {
                 this.showWhite = false
 
+            },
+                headerexit() {
+                this.$router.push({path:'/login'})
             }
 
         },
