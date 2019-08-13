@@ -1,6 +1,6 @@
 <template>
     <div class='home-container'>
-        <SideNav :activeTab="activeTab"></SideNav>
+        <SideNav :activeTab="activeTab" :openeds="openeds"></SideNav>
         <div class="right-container largeList">
             <Header class="header" :headerList="headerList"></Header>
             <div class="right-content white-color">
@@ -101,7 +101,8 @@
             return {
                 dateValue: "",
                 headerList: ['直播', '直播大班课', '大班课列表'],
-                activeTab: 'show',
+                openeds: ['b', 'b-2'],
+                activeTab: 'Show',
                 formInline: {
                     user: '',
                     region: ''

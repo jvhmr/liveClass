@@ -246,8 +246,8 @@
 
         .icon-list {
             img {
-                width: 16px;
-                height: 16px;
+                width: 20px;
+                height: 20px;
             }
 
             height: 36px;
